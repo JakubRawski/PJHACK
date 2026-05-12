@@ -22,6 +22,7 @@ SCBxcWFwIGtkbHB6aXVzIGF4anp2IHdvdGl4cyB0IGFkd2RrbW0gZGVtc2VtcCBvIG5xd3JqIHEgYSBr
 
 Widzac ze plik konczy sie znakami == mozna smialo zalozyc ze jest to Base64.
 (polaczenie  Bazy 6 i 4 tak jak kulty sie nazywaly)
+
 Po odkodowaniu dostajemy: 
 
 ```

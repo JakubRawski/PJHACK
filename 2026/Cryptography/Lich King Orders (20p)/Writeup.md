@@ -27,4 +27,4 @@ Zakladajac ze pierwsze 5 znakow to "PJATK" sprobojmy szyfru Cezara:
     G-P mod 26 = 7-16 mod 26 = -9 mod 26 -> 26-9 = 17 # Przesuwamy o 17 w lewo
 ```
 
-Odszyfrowanie wyglada nastepujco: `PJATK{Frostmourne_hungers}` 
+PO przesunięciu wszystkich liter o 17 w lewo, flaga wyglada nastepujco: `PJATK{Frostmourne_hungers}` 

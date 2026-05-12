@@ -11,7 +11,8 @@ For some unexplained reason, the enchantment table gave him an enchantment he co
 Decipher the Minecraft language so Steve knows what enchantment his weapon will have. (all uppercase)
 ```
 ![](Enchant.png)
-Patrzac na zdjecie, widzimy ze 3 rzad posiada niezakodowane nawiasy
+Patrzac na zdjecie, widzimy ze 3 rzad posiada niezakodowane nawiasy. 
+
 Wystarczy wyszukac jaki alphabet jest uzywany w grze Minecraft: 
 
 ![](alphabet.png)

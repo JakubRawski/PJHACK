@@ -350,7 +350,7 @@ NUM_CORES = os.cpu_count() # USE 100% power of managed democracy
 CHUNK_SIZE = 1_000_000
 ```
 
-Program bedzie bral 100% naszego CPU co sprawi ze nie bedzie mozna robic innych zadan wymagajacych obliczen
+Program bedzie bral 100% naszego CPU co sprawi ze nie bedzie mozna robic innych zadan wymagajacych obliczen. 
 A majac predkosc ~1M klucz/sekunde moze nam zablokowac dzialanie na pod 71 (!) minut.
 (Mozna co prawda napisac wlasny skrypt w C uzywajacy OpenSSl by uzyc CUDA ale napisanie dobrego kodu zajmie wiecej czasu niz wykonanie podanego)
 Dlatego nalezy zmiejszyc zuzycie CPU o polowe:
