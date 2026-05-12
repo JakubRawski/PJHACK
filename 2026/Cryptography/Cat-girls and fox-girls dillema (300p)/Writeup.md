@@ -97,6 +97,7 @@ wystarczy XORowac zaszyfrowany plik z oryginalem by dostac klucz!
 w pliku sa 2 zdjecia:
 - foxSnack.jpg.ears
 - catSnack.png.ears
+
 przyjrzyjmy sie naglowkowi catSnack.png.ears:
 ```
 30 AB 22 80 F3 AE F4 DF 5B 19 5A AE 15 F8 1D 7C B9 FB 68 C7 FE A4 E8 D5 53 1B 5A A3 5C D7 B9 83 44 FB 6D 88 F4 C7 8F 97 03 19 5B EC 56 DA 2C 43
