@@ -6,7 +6,11 @@ Cryptography
 Difficulty: Latwe-Srednie (9 rozwiazan)
 Author: Jakub Rawski
 
-Ministry of Expansion wants to send a crucial data to Malevelon Creek planet. Unfortunatly facists automatons jammed the encryption process and the key fragment was noisy. Your mission is to use, modify and run the Super Earth's Recovery Tool (SERT) from you device and recover the message.
+Ministry of Expansion wants to send a crucial data to Malevelon Creek planet.
+Unfortunatly facists automatons jammed the encryption process
+and the key fragment was noisy.
+Your mission is to use, modify and run the Super Earth's Recovery Tool (SERT)
+from you device and recover the message.
 
 Super Earth has the highest hopes for you!
 
@@ -350,7 +354,7 @@ CHUNK_SIZE = 1_000_000
 
 Program bedzie bral 100% naszego CPU co sprawi ze nie bedzie mozna robic innych zadan wymagajacych obliczen
 A majac predkosc ~1M klucz/sekunde moze nam zablokowac dzialanie na pod 71 (!) minut.
-
+(Mozna co prawda napisac wlasny skrypt w C uzywajacy OpenSSl by uzyc CUDA ale napisanie dobrego kodu zajmie wiecej czasu niz wykonanie podanego)
 Dlatego nalezy zmiejszyc zuzycie CPU o polowe:
 ```
 ct_full = bytes.fromhex(ciphertext_hex)
