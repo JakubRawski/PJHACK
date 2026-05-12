@@ -72,6 +72,7 @@ LIESL{bif0og3glj_b4d4_u4er3_vch7x_dxk4_p_wd3vxx3}
 ```
 Widzimy ze znak na miejscu 0 i 4 sie potwarzaja mimo ze sa rozne.
 To znaczy ze `len(klucz = 4)` oraz k = `LIES`
+```
 ARELV{qrf0hq3vuj_u4n4_j4nr3_omw7g_dqu4_e_fd3ohm3}
 (Klucz = LIES)
 PJATK{inn0wi3rcy_m4j4_r4cj3_kul7y_zyj4_w_bl3dzi3}
