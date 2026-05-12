@@ -3,7 +3,7 @@
 ```
 Cryptography
 
-Difficulty: Trywialne (32 osobom udalo sie rozwiazac)
+Difficulty: Trywialne (32 rozwiazania)
 Author: Jakub Rawski
 
 King Arthas, the centuries-exiled ruler of the undead, has awakened in his Icecrown citadel.
