@@ -82,6 +82,7 @@ ALTERNATYWNE ROZWIAZANIE:
 wiedzac ze jest to szyfr klasyczny mozemy zliczac znaki ktore wystepuja najczesciej i "bruteforcowac"
 dla kolejnych len(klucz) dzielac na grupy w zaleznosci od wyniku `pozycja_znaku` mod `klucz`
 ![](Polish_letters_frequencies.png)
-W przypadku gdybysmy nie znali prefixu flagi, w taki sposob trzeba bylo by to zadanie rozwiazac
+
+W przypadku gdybysmy nie znali prefixu flagi, w taki sposob trzeba bylo by to zadanie rozwiazac.
 
 Flaga to : `PJATK{inn0wi3rcy_m4j4_r4cj3_kul7y_zyj4_w_bl3dzi3}` 
