@@ -1,2 +1,4 @@
 # PJHACK
-Zadania z PJHACK mojego autorstwa
+Zadania z PJHACK 2026 Kategorii Crypto
+
+Spis Tresci:
