@@ -15,8 +15,6 @@ from you device and recover the message.
 Super Earth has the highest hopes for you!
 
 WARNING! SERT will use 100% of your freedom so use and set up parameters wisely
-
-
 ```
 Dostajemy plik Super_Earth_Recover_Tool.py oraz Params.conf
 

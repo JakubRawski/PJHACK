@@ -6,9 +6,15 @@ Cryptography
 Difficulty: Srednie (3 rozwiazania)
 Author: Jakub Rawski
 
-In the city of Kivotos, cat girls and fox girls lived in discord because of shape of their ears. Both factions experienced persecution because of this, so the GSC decided to introduce a law that would equalize the quarreling citizens and resolve the inequalities resulting from the differences in ear shape. Unfortunately, a group of cybercriminals, who valued their sense of superiority more than harmony, attacked the city's servers and encrypted the signed law leaving with Ransomware called "punishment For Equality". Your task is to recover the Free Ears Act and reconcile the city's quarreling citizens with the law.
-
-
+In the city of Kivotos, cat girls and fox girls lived in discord because of shape of their ears.
+Both factions experienced persecution because of this,
+so the GSC decided to introduce a law that would equalize the quarreling citizens
+and resolve the inequalities resulting from the differences in ear shape.
+Unfortunately, a group of cybercriminals, who valued their sense of superiority
+more than harmony, attacked the city's servers and encrypted the signed law
+leaving with Ransomware called "punishment For Equality".
+Your task is to recover the Free Ears Act
+and reconcile the city's quarreling citizens with the law.
 ```
 Dostajemy manifest w postaci pliku punishmentForEquality.py oraz zaszyfrowany plik .secretActs.zip.ears
 

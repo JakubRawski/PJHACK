@@ -11,8 +11,6 @@ Using the prophet's methods, they encrypted the message and then jointly encoded
 The Cult of Fours designated the key, and the Cult of Sixes is responsible for its storage. 
 Unfortunately, the Cult of Sixes lost the key in the holy war. 
 Your task is to recover the truth hidden within the encrypted message.
-
-
 ```
 Plik zawiera zakodowana wiadomosc: 
 

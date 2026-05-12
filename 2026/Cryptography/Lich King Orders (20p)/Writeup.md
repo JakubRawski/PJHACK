@@ -10,8 +10,6 @@ King Arthas, the centuries-exiled ruler of the undead, has awakened in his Icecr
 Instead of marching openly upon the realms of the living, however, he has begun sending magical impulses-encrypted messages-to his dormant agents stationed in Alliance cities and garrisons.
 If Arthas's minions receive their full instructions, an unstoppable undead uprising will erupt from the heart of the kingdom.
 Your task is to decipher his message and save Azeroth from the undead plague.
-
-
 ```
 Plik zawiera zaszyfrowana wiadomosc, zajrzyjmy do niego (to zwykly .txt)
 
