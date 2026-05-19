@@ -668,7 +668,7 @@ Patrzac dalej jest wspomniany argon, zostal on zaimportowany ale nie jest prawid
         pass  # Teto: or don't XD
     return ph
 ```
-Mamy hasla ale zostal nam do wpisania sol:
+Mamy hasla ale zostal nam do wpisania salt:
 ```
     def generate_salts(username: str, birth_date: str, secret_word: str) -> tuple:
     # Neru: this section is annoying — there's nothing equivalent in previous project.
@@ -729,7 +729,7 @@ Mamy hasla ale zostal nam do wpisania sol:
     # Teto: I don't want to work again on this project.....
 ```
 
-Po kometarzach i strukturze kodu widac ze sol to token
+Po kometarzach i strukturze kodu widac ze salt to token
 ```
 token = f"{username}:{birth_date}:{secret_word}"
 ...
@@ -773,7 +773,7 @@ Neru: (linijka 77 i 80-81)
 ```
 Secret word dla Miku, Teto i Neru moga byc odpowiednio `leek`,`pear`,`banana`
 
-Mamy wiec wszystkie czesci by odtworzyc sol i odszyfrowac wiadomosc:
+Mamy wiec wszystkie czesci by odtworzyc salt i odszyfrowac wiadomosc:
 ```
 from datetime import datetime
 
@@ -812,7 +812,7 @@ Wynik dzialania kodu:
 ('f65ac2772353fa857fcf9cf5d02a1e2a', 'a0682f909b96096604c5be1bd141b121')
 ('2c34c1093d6132c3c58d5c88b62d0d73', '1db1a4dea60591bc3e840cc62ca061c3')
 ```
-Teraz wrzucmy brakujaca sol do pliku i odszyfrujmy wiadomosci
+Teraz wrzucmy brakujaca salt do pliku i odszyfrujmy wiadomosci
 
 
 ```
@@ -918,7 +918,7 @@ Odszyfrowano wiadomosc! Niestety jeszcze flagi nie mamy
 
 Jak sie przyjrzymy to mozna zauwaz ze:
 ```
-Miku: PJ..
+Miku: PT..
 Teto: JK..
 Neru: A{..
 ```
