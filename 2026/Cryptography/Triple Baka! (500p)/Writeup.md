@@ -467,7 +467,7 @@ def create_pepper():
     with open('secret.txt', 'w') as f:
         f.write(pepper)
 ```
-Znajac orginalne haslo oraz wynik hashowania z pepperem mozna zruteforcowac pepper
+Znajac orginalne haslo oraz wynik hashowania z pepperem mozna zbruteforcowac pepper
 
 Kod dokleja pepper na poczatku hasla
 ```
@@ -597,7 +597,7 @@ import hashlib
 import string
 import itertools
 
-pepper = "ba7a"  # <- tu wstaw swój pepper
+pepper = "ba7a"
 target_hashMiku = "c5c1027bee8eb987faf550f410ce540c3c456346f78242cb93aa9fe5f33d013d"
 target_hashTeto = "b5c902ff0958a256d8949362a8881bc66aada8753822ea4776f6b82f711b831f"
 target_hashNeru = "c6db9bb82deb41549fb5b6f5d10f622f5ad26d4daefe6217144d35ad6533a57c"
@@ -639,7 +639,7 @@ Znalezione hasło dla teto: baaaka
 Znalezione hasło dla Neru: danah
 ```
 WAZNE: hashcat jest rownie dobrym rozwiazaniem bo robi to szybciej.
-Ale jako ze mamy tylko 3 * (x*(x^7-1))/(x-1) mozliwosci czyli 25 059 247 746 rozwiazan
+Ale jako ze mamy tylko 3 * (x*(x^7-1))/(x-1)  (po wzorze na ciag geometryczny 3 * sum[x^k,{1,7}] ) mozliwosci czyli 25 059 247 746 rozwiazan
 (ciut mniej niz 3*2^33), kod w Pythonie sobie z tym tez dobrze poradzi
 Komenda z hashcata:
 ```
