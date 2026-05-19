@@ -14,10 +14,17 @@ The big 3 Vocaloids:
 
 -Akita Neru
 
-Will perform a new big song! But before that.... 3 of them were commisioned for writing a database code! They put all efforts and use it to safely store their lyrics. But somehow 3 of them forgot their passwords... Your task is to recover ALL stored data in TripleBaka using hashed passwords from BakaPasswords and code logic from BakaEncryption. Goold Luck!
+Will perform a new big song!
+But before that.... 3 of them were commisioned for writing a database code!
+They put all efforts and use it to safely store their lyrics.
+But somehow 3 of them forgot their passwords...
+Your task is to recover ALL stored data in TripleBaka
+using hashed passwords from BakaPasswords
+and code logic from BakaEncryption.
+Goold Luck!
 ```
-![(from left to right: Neru, Miku, Teto)](artworks-000024521978-nt6rzm-t1080x1080.jpg)
-
+![](artworks-000024521978-nt6rzm-t1080x1080.jpg)
+`(from left to right: Neru, Miku, Teto)`
 Zip zawiera 3 pliki:
  - TripleBaka.csv
  - BakaPasswrods.csv
