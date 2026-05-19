@@ -641,6 +641,7 @@ Znalezione hasło dla Neru: danah
 WAZNE: hashcat jest rownie dobrym rozwiazaniem bo robi to szybciej.
 Ale jako ze mamy tylko 3 * (x*(x^7-1))/(x-1)  (po wzorze na ciag geometryczny 3 * sum[x^k,{1,7}] ) mozliwosci czyli 25 059 247 746 rozwiazan
 (ciut mniej niz 3*2^33), kod w Pythonie sobie z tym tez dobrze poradzi
+
 Komenda z hashcata:
 ```
 # Dla 1 hasla, dla pozostalych robimy analogicznie
@@ -740,6 +741,7 @@ Pierwsze czesc jest znana (Miku,Teto,Neru).
 Druga czesc mozna latwo znalesc w internecie:
 
 ![](birthdays.png)
+
 Co do trzeciej czesci musimy poszukac w komentarzach czym to jest
 
 W linijce 340 mamy podpowiedz:
