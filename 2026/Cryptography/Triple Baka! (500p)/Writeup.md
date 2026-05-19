@@ -25,10 +25,12 @@ Goold Luck!
 ```
 ![](artworks-000024521978-nt6rzm-t1080x1080.jpg)
 `(from left to right: Neru, Miku, Teto)`
+
 Zip zawiera 3 pliki:
  - TripleBaka.csv
  - BakaPasswrods.csv
  - BakaEncryption.py
+
 Zawartosc BakaPasswrods.csv:
 ```
 username,password_hash
@@ -37,6 +39,7 @@ Teto,b5c902ff0958a256d8949362a8881bc66aada8753822ea4776f6b82f711b831f
 Neru,c6db9bb82deb41549fb5b6f5d10f622f5ad26d4daefe6217144d35ad6533a57c
 ```
 Widzimy ze kazda z Vocaloid ma zahashowane haslo za pomoca SHA-256
+
 Zawartosc TripleBaka.csv:
 ```
 username,nonce,hash_salt,key_salt,encrypted_recipe
@@ -435,8 +438,8 @@ def generate_salts(username: str, birth_date: str, secret_word: str) -> tuple:
 ```
 
 Zawartosc pliku jest dosc duza choc wiekszosci sa to komentarze
-Przyjrzyjmy sie fragmentom tego kodu:
 
+Przyjrzyjmy sie fragmentom tego kodu:
 ```
 def get_pepper() -> str:
     # Teto: straightforward. read the pepper from the file.
@@ -465,13 +468,15 @@ def create_pepper():
         f.write(pepper)
 ```
 Znajac orginalne haslo oraz wynik hashowania z pepperem mozna zruteforcowac pepper
+
 Kod dokleja pepper na poczatku hasla
 ```
 ph = hash((pepper + ":" + password).encode()).hexdigest()
 ```
 Warto zauwazyc ze pepper ma 16 bitow dlugosci a nie 16 bajtow wiec mamy do sprawdzenia 
 tylko 2^16 (65 536) mozliwosci zamiast 8^16 == 2^48 (281 474 976 710 656) mozliwych kombinacji
-Nasteupjacy kod:
+
+Nastepujacy kod:
 ```
 import hashlib
 
@@ -575,9 +580,11 @@ Dlugosc check sie zwieksza za kazdym razem gdy haslo:
  - zawiera co najmniej 1 cyfre
  - zawiera co najmniej 1 duza litere
  - zawiera co najmniej 1 znak specjalny
+
 Jako ze wystarczy by jedna z przeslanek sie spelnila by odrzucic haslo
 (Znak > jest w zla strone ; prawidlowy walidator tak skonsruowany powinien wygladac nastepujaco:
 if len(checks) < 4:)
+
 To wiemy ze haslo: 
  - ma mniej niz 8 znakow
  - nie zawiera cyfr
@@ -633,8 +640,7 @@ Znalezione hasło dla Neru: danah
 ```
 WAZNE: hashcat jest rownie dobrym rozwiazaniem bo robi to szybciej.
 Ale jako ze mamy tylko 3 * (x*(x^7-1))/(x-1) mozliwosci czyli 25 059 247 746 rozwiazan
-(ciut mniej niz 3*2^33)
-kod w Pythonie sobie z tym tez dobrze poradzi
+(ciut mniej niz 3*2^33), kod w Pythonie sobie z tym tez dobrze poradzi
 Komenda z hashcata:
 ```
 # Dla 1 hasla, dla pozostalych robimy analogicznie
@@ -723,21 +729,25 @@ Mamy hasla ale zostal nam do wpisania sol:
 ```
 
 Po kometarzach i strukturze kodu widac ze sol to token
-```token = f"{username}:{birth_date}:{secret_word}"
+```
+token = f"{username}:{birth_date}:{secret_word}"
 ...
     hash_salt = sha256(token.encode()).hexdigest()[:32]
     key_salt  = sha256((token + ":key").encode()).hexdigest()[:32]
 ```
 Sklada sie on z imienia, daty urodzenia i secret word.
 Pierwsze czesc jest znana (Miku,Teto,Neru).
-Druga czesc mozna latwo znalesc w internecie (na ):
+Druga czesc mozna latwo znalesc w internecie:
+
 ![](birthdays.png)
-Co do trzeciej musimy poszukac w komentarzach czym to jest
+Co do trzeciej czesci musimy poszukac w komentarzach czym to jest
+
 W linijce 340 mamy podpowiedz:
 ```
     # Teto: If you girls don't come up with a better idea, I will put your favorite ingredient in it!
 ```
 Poszukajmy teraz w komentarzach kto co lubi:
+
 Miku: (linijka 128 oraz 145-146)
 ```
     # Miku: ...where is that leek delivery... anyway FINISH THE FUNCTION:
@@ -903,13 +913,15 @@ A{__ubmi404d0y_in_dnnu_4r44uu_0si0_44ry3_74i4w3Ki4iui4__4"n__ur4}
 ```
 
 Odszyfrowano wiadomosc! Niestety jeszcze flagi nie mamy
+
 Jak sie przyjrzymy to mozna zauwaz ze:
 ```
 Miku: PJ..
 Teto: JK..
 Neru: A{..
 ```
-czytajac od gory do dolu mamy: `PJATK{`!~
+czytajac od gory do dolu mamy: `PJATK{`!
+
 Nasza flaga jest podzielona na 3 czesci, zlaczmy je:
 ```
 Miku = 'PTKg7k407__33h0Sr444i3k4w3_44uIgh_n43g40rK0__s4_i__7__kdn"Hkd7r34'
@@ -922,4 +934,5 @@ print(FLAG)
 ```
 A wynik to:
 `PJATK{Ki_g4_7suk3b4_m0ni744_n0_m43_d3_0h4y0!_Shir4n4i_4id4_ni_n3muk3_4r4w4r374_(44uu44uu)_Is0g4shii_n0ni_4m43n4g4r4_y0s3ru_K070b4_ni_s4s0w4r3_"Kimi_w4_ji7su_ni_b4k4_d4_n44"_"H0nki_d3_7sur4r3744"}`
+
 (Najdluzsza flaga w PJHACK btw)
