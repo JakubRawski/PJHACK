@@ -76,7 +76,7 @@ FW<0rn$#1Kn1b<F:v)%&$AkIys6>d&cMvlxuu+e/s%6|U,S}iy-qr/hMn'Kuk3s8]D[VS[dc49w6M;yl
 5GC&_WuP5Kn)xVP(YXOzi7iT[=5Gmz[9dITz2o$3lZA8uf'k%a'8q^h%Nh;q|#T7e;IayLnZvCB{F*))e]'u4RH8,q!84i5O&@+k&l{s02{?HB,*8t{<y?I<)cM&QY50HUR1}5pK9@r0XrgA4v^0qMTzM+5jO^[e6BC5f]Z:
 
 ```
-Zawartosc secret.tea:
+Zawartosc recipe.tea:
 ```
 CERoWZn[/g&{r&YaS-tAYu4Gl,9aDOt#Pi+bo3}nc's.X S5y:joeVu/Q L&hmwa4$v0:eXK nlfB<iWpg4euUKr#QeQQdiS <Wo{TuUZtpc U.tL9h'?aS0t6# (Ftvye;?a<M Xmn.beGxeJ?d^Uss! pnwTvaz_tCueNtr*| QHbt.u4+t>j :HdC0o53 %wnp2o>*t8- YBfoTo^rr?@g/0efGt9E q9a|=bwFo_MuIvtg& 0.smkuc@gutaf7rmI UFa8-d5:d}d OGa,isfA Zjm&^a4hnTHyL' {4sJ3pgNopBo,:niJsdH [=a;5sYD BEtnqhHWe$2 ^Ba?JmJ<o'buc&ndntsG 6=t24oOm .hbKpej{ 7(c/xoK+n6asUlil.sjdtTgez6n^2ti| |YwROiu}tZZhqC hEm(0yzO M^vHveY/rf(s.7iP+oU/nm6 /^oNAf,@ X9tEZhZyeU: l&r_yeYScV6iFUp}CeJ2 F_dLUiY$s}6t,KrZ.i)'bv5unYtg]iCBovjnjd
 ```
@@ -272,7 +272,7 @@ Mozna sprawdzic wersje javy zagladajac do Pliku .class
 (InteliJ tutaj zrobil to za mnie)
 ![](javaVersion.png)
 
-Wiemy teraz ze to 21.
+Wiemy teraz ze to Java JDK 21.
 
 Ustawmy teraz tam gdzie to ma znaczenie:
 
@@ -495,7 +495,8 @@ Sprobujmy 2 typow ROUNDS:
  - 3 -> ten sam co ma receptura
  - 21 -> ten co szyfrowano plik
 
-Dla amount = 3  dostajemy `504A41544B7B6B3730357970313337796C3363756B72757D`
+Dla amount =  3 dostajemy `504A41544B7B6B3730357970313337796C3363756B72757D`
+
 Dla amount = 21 dostajemy `34F2F4BD4CD4B0634EAEF6511E551E11052284411E7996BA`
 
 Wynik dla 21 to 
