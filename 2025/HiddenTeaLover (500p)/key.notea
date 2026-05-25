@@ -1,0 +1,9 @@
+class getKey()
+    def getKey()
+        link = openFromNet("https://en.wikipedia.org/wiki/Japanese_tea_ceremony")
+        key = link.getTitle()
+        key.strip("_")
+	key.toLoverCase()
+        key.remove("tea")
+        return key
+
