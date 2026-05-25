@@ -33,7 +33,7 @@ Zawartosc catnipLocation.loc:
 </msg>
 
 ```
-Widac ze pewnie bylo to szyfrowane RSA 2048 (sugestia z <method> oraz <agent>)
+Widac ze pewnie bylo to szyfrowane RSA 2048 (sugestia z method oraz agent)
 
 
 Zawartosc key.pub:
@@ -44,7 +44,7 @@ val2 = 1742264020848294187766309884600694867548215676895793061329276498875156462
 
 Charakterystyka liczby val1 (2^16+1) moze sugerowac
 
-ze jest to e wiec val 2 powinien byc n
+ze jest to e wiec val2 = n
 
 zakladajac ze to klucz publiczny (e,n)
 
